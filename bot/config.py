@@ -11,7 +11,7 @@ class Config:
     DATABASE_URL = os.environ.get('DATABASE_URL')
     AUTH_USERS = [int(i) for i in os.environ.get('AUTH_USERS', '').split(' ')]
     MAX_PROCESSES_PER_USER = int(os.environ.get('MAX_PROCESSES_PER_USER', 2))
-    MAX_TRIM_DURATION = int(os.environ.get('MAX_TRIM_DURATION', 600))
+    MAX_TRIM_DURATION = int(os.environ.get('MAX_TRIM_DURATION', 86400))
     TRACK_CHANNEL = int(os.environ.get('TRACK_CHANNEL', False))
     SLOW_SPEED_DELAY = int(os.environ.get('SLOW_SPEED_DELAY', 15))
     HOST = os.environ.get('HOST', '')
